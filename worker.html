@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Workers sample</title>
+    <style>
+      button {
+        width: 200px;
+        text-align: center;
+        background: #eee;
+        cursor: pointer;
+        padding: 5px 10px;
+        display: block;
+        border: 1px #ccc solid;
+      }
+    </style>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <section>
+      呼び出しはどちらも変わらない　worker の js コードは好きな方で記述してよい
+      <br />
+      addEventListener vs onmessage
+    </section>
+    <section>
+      <div id="debug1">-</div>
+      <div id="output1">-</div>
+      <button type="button" id="button1">type A</button>
+    </section>
+    <section>
+      <div id="debug2">-</div>
+      <div id="output2">-</div>
+      <button type="button" id="button2">type B</button>
+    </section>
+  </body>
+</html>
